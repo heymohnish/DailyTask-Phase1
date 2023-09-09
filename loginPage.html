@@ -3,8 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous" src="loginPage.js"></script> -->
     <link rel="stylesheet" href="loginPage.css">
+    <script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -21,15 +23,16 @@
     <div>
         <fieldset>
             <form>
-                <!-- <label for="email">Email or LoginId</label> -->
-                <input type="text" id="email" name="email" placeholder="email or username"><br>
-                <input type="password" id="password" name="password" placeholder="password"><br>
-                <input type="checkbox" id="vehicle2" name="remember" value="true">
+                <input type="text" id="email" name="email" placeholder="email or username" onblur="onBlurEmail()"
+                    onfocus="onBlurEmail()"><br>
+                <input type="password" id="password" name="password" placeholder="password" onblur="onBlurPass()"
+                    onfocus="onBlurPass()"><br>
+                <input type="checkbox" id="checkBox" name="remember" value="true">
                 <label for="remember" style="font-size:medium;">remember me </label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.figmentagency.com/wp-content/uploads/2015/08/Fotolia_84625850_XS.jpg"
                     target="_blank" style="font-size:smaller;" style="align-self:center;">Forgot Password?</a><br><br>
-                <input type="submit" value="logIn">
+                <input type="submit" value="logIn" onfocus="focusFunction()" onclick="validateEmail()" >
             </form>
             <center>
                 <p style="font-size:smaller;">Not a member?<a
@@ -47,12 +50,10 @@
             <a href="mailto:hege@example.com"> hege@example.com</a></a><br>
             <br><i class="fa fa-phone" style="font-size:20px;"></i> +91 8300625806 </a></a>
             <p><br>Copyright © 2023, ClaySys Technologies All Rights Reserved.<br><br>
-
-
         </center>
 
     </div>
-
+    <script src="loginPage.js"></script>
 </body>
 
 </html>
