@@ -1,0 +1,130 @@
+fieldset {
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    border-color: #ffffff;
+    margin-left: 1cm;
+    padding-top: 1cm;
+    padding-left: 1cm;
+    padding-bottom: 1cm;
+    padding-right: 1cm;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+li a:hover:not(.active) {
+    background-color: #007dc5;
+    box-shadow: inset 140px 0 0 0 #54b3d6;
+    color: white;
+}
+
+#para1 {
+    color: rgb(0, 0, 0);
+    padding-left: 55%;
+    padding-top: 3%;
+    font-size: 1.5cm;
+    font-family: Consolas;
+}
+
+#para2 {
+    padding-left: 52.5%;
+    padding-top: 3%;
+}
+
+body {
+    background-image: url('75.animated-ripples-background-html-css.gif');
+    background-size: 150%;
+
+    /* opacity: 20%; */
+    image-resolution: 20%;
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:focus {
+    outline: max(1px, 0.15em) solid currentColor;
+    outline-offset: max(5px, 0.1em);
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 72, 72);
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+
+    padding: 5px 220px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* Green */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(182, 0, 0);
+    color: white;
+}
+.foow {
+background-color: #9c9c9c;
+}

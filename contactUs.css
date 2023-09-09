@@ -1,0 +1,124 @@
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    
+    padding: 22px 18px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    float: right;
+}
+
+li a:hover:not(.active) {
+    background-color: #007dc5;
+}
+
+div.background {
+    background: url(backround.jpg) repeat;
+    /* /* border: 1px solid black; */
+    border: none;
+}
+
+div.transbox {
+    margin: 10px;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+.foow {
+background-color: #9c9c9c;
+}
+input[type=text],
+select {
+    width:30%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+input[type="submit"] {
+    background-color: rgb(0, 225, 53);
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    width:5%;
+    padding: 5px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 365px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 145, 10);
+    color: white;
+}
+.textAlign{
+    color: #007dc5;
+    padding-top: 170px;
+    padding-left: 40px;
+}
+.picAlign{
+    padding-top: -60px;
+}
+input[type=messageText],
+select {
+    width:30%;
+    cursor: move;
+    padding: 50px 40px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(3, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.mapouter {
+    position: relative;
+    height: 320px;
+    width: 590px
+    /* float: right; */
+}
+.gmap_canvas {
+    overflow: hidden;
+    height: 320px;
+    width: 590px
+    
+}
+
+.gmap_canvas iframe {
+    position: relative;
+    z-index: 2
+}
+
+.gmap_canvas a {
+    position: absolute;
+    top: 0;
+    z-index: 0
+}

@@ -1,0 +1,111 @@
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px 18px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: right;
+    text-align: center;
+    /* padding: 2px 15px; */
+}
+
+li a:hover:not(.active) {
+    background-color: #5a5a5a;
+}
+
+div.background {
+    background: url(backround.jpg) repeat;
+    border: 1px solid black;
+}
+
+div.transbox {
+    margin: 90px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.box {
+    background: #EEE;
+    height: 100px;
+    width: 600px;
+}
+
+.split {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index: 7;
+    top: 9.4%;
+    overflow-x: hidden;
+    padding-top: 1px;
+    padding-left: 12px;
+    padding-right: 1px;
+}
+
+.splitl {
+    height: 50%;
+    width: 47%;
+    position: fixed;
+    z-index: 7;
+    top: 9.4%;
+    overflow-x: hidden;
+    padding-top: 0px;
+}
+
+
+.left {
+    left: .5%;
+    padding-right: -100px;
+    background-color: #ffffff;
+    font-style: bold;
+}
+
+/* img {
+    position:absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: -1;
+} */
+
+.right {
+    right: .5%;
+    background-color: red;
+    background: url(IT-Companies-in-India.jpg) repeat;
+}
+
+div.clear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+    font-size: 0pt;
+    margin-top: -1px;
+}
+
+h1 {
+    font-style: italic
+}
+
+p {
+    word-spacing: .9mm;
+}
+.foow {
+background-color: #9c9c9c;
+}
