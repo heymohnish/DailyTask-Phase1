@@ -10,31 +10,38 @@
 <body>
     <div>
         <ul>
-            <li style="float: left;"><img src="C:\Users\Admin\Downloads\images.png" width="130" height="65"></li>
-            <li style="font-size:24px;"><a href="C:\Users\Admin\Documents\DailyTask Phase1\simplePage.html"><i
-                        class="fas fa-home" style="font-size:24px;"></i> Home</a></li>
+            <li style="float: left;"><img src="C:\Users\Admin\Downloads\images.png" width="120" height="60"></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\contactUs.html">Contact us</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\signUpPage.html">Sign up</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\loginPage.html">Sign In</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\aboutUs.html">About Us</a></li>
         </ul>
     </div>
     <div id="para1">
-        Welcome to Claysys!
+        Sign up
     </div>
     <div id="para2">
         <fieldset>
             <form>
-                <!-- <label for="email">Email or LoginId</label> -->
-                <input type="text" id="fname" name="fname" placeholder="first name*"><br>
-                <input type="text" id="lname" name="lname" placeholder="last name*"><br>
-                <input type="date" id="DOB" name="DOB" placeholder="last name*">
-                <input type="number" id="age" name="age" placeholder="age*" min="1"max='100'><br><br>
+                <input type="text" id="fname" name="fname" onblur="onBlurName()" placeholder="first name*"><br>
+                <div id="errorName"></div>
+                <input type="text" id="lname" name="lname" onblur="onBlurNameLast()"placeholder="last name*"><br>
+                <div id="errorLname"></div>
+                <input type="date" id="DOB" name="DOB" placeholder="last name*" onclick="setMinDate()" onblur="calculateAge()">
+                <input type="number" id="age" name="age" placeholder="age*" readonly><br>
+                <div id="errorAge"></div><br>
                 &nbsp; Gender* : <input type="radio" id="m" name="m" value="m">
                 <label for="m">male</label>
                 <input type="radio" id="f" name="f" value="f">
                 <label for="f">female</label>
                 <input type="radio" id="o" name="o" value="o">
-                <label for="o">other</label><br><br>    
-                <input type="text" id="phone" name="phone" placeholder="phone*"maxlength = "10"pattern="[0-9]+"><br>
-                <input type="text" id="email" name="email" placeholder="email*"><br>
-                <input type="text" id="address" name="address" placeholder="address*"><br>
+                <label for="o">other</label><br><br>
+                <input type="text" id="phone" name="phone" placeholder="phone*" maxlength="10" pattern="[0-9]+" onblur="validPhone(this)"><br>
+                <div id="errorPhone"></div>
+                <input type="text" id="email" name="email" placeholder="email*" onblur="onBlurEmail()"><br>
+                <div id="errorMail"></div><br>
+                <input type="text" id="address" name="address" placeholder="address*"onblur="onBlurMessage(this)" onkeydown="onKeyMessage(this)"><br>
+                <div id="errorMessage"></div>
                 <select name="state" id="state" placeholder="state*" class="form-control" onchange="cityFunction()">
                     <option value="select">--State*--</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -42,15 +49,19 @@
                     <option value="Tamil Nadu">Tamil Nadu</option>
                     <option value="Telangana">Telangana</option>
                 </select><br>
-                <select name="city" id="city" class="form-control">
-                <input type="text" id="username" name="username" placeholder="username*"><br>
-
-                <input type="password" id="password" name="password" placeholder="password*"><br>
-                <input type="password" id="repassword" name="repassword" placeholder="confirm-password*"><br>
+                <select name="city" id="city" placeholder="city*" class="form-control">
+                    <option value="select">--City*--</option>
+                </select>
+                <input type="text" id="username" name="username" placeholder="username*"onblur="onBlurUser()"><br>
+                <div id="errorUserName"></div>
+                <input type="password" id="password" name="password" placeholder="password*"onblur="validatePassword()"><br>
+                <div id="errorPassword"></div>
+                <input type="password" id="repassword" name="repassword" placeholder="confirm-password*" onblur="checkRepass()"><br>
+                <div id="errorrePassword"></div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.figmentagency.com/wp-content/uploads/2015/08/Fotolia_84625850_XS.jpg"
                     target="_blank" style="font-size:smaller;">already have account?</a><br><br>
-                <input type="submit" value="submit">
+                <input type="submit" value="submit" onclick="validateEmail()">
             </form>
 
             <!-- </center> -->

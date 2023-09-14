@@ -12,27 +12,31 @@
 <body>
     <div>
         <ul>
-            <li style="float: left;"><img src="C:\Users\Admin\Downloads\images.png" width="130" height="65"></li>
-            <li style="font-size:24px;"><a href="C:\Users\Admin\Documents\DailyTask Phase1\simplePage.html"><i
-                        class="fas fa-home" style="font-size:24px;"></i> Home</a></li>
+            <li style="float: left;"><img src="C:\Users\Admin\Downloads\images.png" width="120" height="60"></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\contactUs.html">Contact us</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\signUpPage.html">Sign up</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\loginPage.html">Sign In</a></li>
+            <li><a href="C:\Users\Admin\Documents\DailyTask Phase1\aboutUs.html">About Us</a></li>
         </ul>
     </div>
     <div id="para1">
-        Welcome to Claysys!
+        Sign In
     </div>
     <div>
         <fieldset>
             <form>
                 <input type="text" id="email" name="email" placeholder="email or username" onblur="onBlurEmail()"
-                    onfocus="onBlurEmail()"><br>
-                <input type="password" id="password" name="password" placeholder="password" onblur="onBlurPass()"
-                    onfocus="onBlurPass()"><br>
+                    onblur="onBlurEmail()"><br>
+                <div id="errorMail"></div><br>
+                <input type="password" id="password" name="password" placeholder="password"
+                    onblur="validatePassword()"><br>
+                <div id="errorPassword"></div><br>
                 <input type="checkbox" id="checkBox" name="remember" value="true">
                 <label for="remember" style="font-size:medium;">remember me </label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.figmentagency.com/wp-content/uploads/2015/08/Fotolia_84625850_XS.jpg"
                     target="_blank" style="font-size:smaller;" style="align-self:center;">Forgot Password?</a><br><br>
-                <input type="submit" value="logIn" onfocus="focusFunction()" onclick="validateEmail()" >
+                <input type="submit" value="logIn" onfocus="focusFunction()" onclick="validateEmail()">
             </form>
             <center>
                 <p style="font-size:smaller;">Not a member?<a

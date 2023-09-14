@@ -111,3 +111,19 @@ input[type="submit"]:hover {
 .foow {
     background-color: #9c9c9c;
 }
+#errorPassword{
+    color: rgb(255, 71, 71);
+    font-weight: bold;
+    font-size: small;
+}
+#errorMail {
+    color: rgb(255, 71, 71);
+    font-weight: bold;
+    font-size: small;
+}
+#email:focus{
+    border: 4px solid rgb(243, 237, 57);
+}
+#password:focus{
+    border: 4px solid rgb(243, 237, 57);
+}
